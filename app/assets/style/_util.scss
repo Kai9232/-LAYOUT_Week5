@@ -1,0 +1,120 @@
+// 背景顏色
+.bg-gray100 {
+    background-color: $gray-100!important;
+}
+// 邊框
+.border-gray400 {
+    border-color: $gray-400!important;
+}
+// 尺寸
+.w-76 {
+    width: 76px;
+}
+.w-320 {
+    width: 320px;
+}
+.w-486 {
+    width: 486px;
+}
+.w-584 {
+    width: 584px;
+}
+.w-920 {
+    width: 920px;
+}
+.w-100p {
+    width: 100%;
+}
+.h-260 {
+    height: 260px;
+}
+.top-32 {
+    top: 32px;
+}
+.end-32 {
+    right: 32px;
+}
+.proPic {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+// 間距
+.mb-6 {
+    margin-bottom: $spacer*1.5;
+}
+.mb-8 {
+    margin-bottom: $spacer*2;
+}
+.mb-11 {
+    margin-bottom: $spacer*2.75;
+}
+.mb-28 {
+    margin-bottom: $spacer*7;
+}
+.ms-8 {
+    margin-left: $spacer*2;
+}
+.me-6 {
+    margin-right: $spacer*1.5;
+}
+.p-3 {
+    padding: $spacer*0.75!important;
+}
+.p-8 {
+    padding: $spacer*2!important;
+}
+.pt-6 {
+    padding-top: $spacer*2;
+}
+.pb-6 {
+    padding-bottom: $spacer*2;
+}
+.ps-6 {
+    padding-left: $spacer*1.5!important;
+}
+.px-6 {
+    padding-right: $spacer*1.5!important;
+    padding-left: $spacer*1.5!important;
+}
+// 文字字級
+.h1 {
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.h2 {
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.h4 {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.h5 {
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.fsz-18 {
+    font-size: 18px;
+}
+// 文字顏色
+.text-gray400 {
+    color: $gray-400;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

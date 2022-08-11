@@ -1,0 +1,16 @@
+.bg-light {
+    width: 296px;
+    height: 100vh;
+    padding: 32px 0;
+}
+.navbar-brand {
+    display: block;
+    margin: 0 0 20px 32px;
+    padding: 0;
+}
+.nav-item {
+    padding-left: 32px;
+}
+.nav-link:hover {
+    color: $success;
+}

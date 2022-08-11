@@ -1,0 +1,22 @@
+// 表單
+.form-label {
+    margin-bottom: 4px;
+}
+.form-control {
+    border-color: $dark!important;
+    border-radius: 2px!important;
+    padding: 12px;
+}
+.form-select {
+    border-color: $dark!important;
+    border-radius: 2px!important;
+    padding: 12px;
+}
+.form-check {
+    margin-bottom: 16px!important;
+}
+.form-check-input {
+    width: 20px!important;
+    height: 20px!important;
+    border: 2px solid $dark!important;
+}
