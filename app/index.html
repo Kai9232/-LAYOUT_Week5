@@ -9,28 +9,42 @@ current: index
   <div class="d-flex justify-content-between align-items-end text-dark mb-11">
     <div class="d-flex align-items-end">
       <h1 class="h1 me-5">Assignment</h1>
-      <h2 class="h3">
-        All Courses
-        <span class="material-icons text-success align-middle ps-2">expand_more</span>
-      </h2>
+      <div class="dropdown">
+        <button class="border-0 bg-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <h2 class="h3">
+            All Courses
+            <span class="material-icons text-success align-middle ps-2">expand_more</span>
+          </h2>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">HTML/CSS</a></li>
+          <li><a class="dropdown-item" href="#">JavaScrip</a></li>
+          <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+        </ul>
+      </div>
     </div>
     <div class="d-flex">
       <span class="material-icons me-4">search</span>
       <span class="material-icons">notifications_active</span>
     </div>
   </div>
-  <div class="d-flex justify-content-between mb-1">
-    <p class="h3">
-      All (4)
-      <span class="material-icons text-success align-middle ps-2">expand_more</span>
-    </p>
-    <p class="h5 text-secondary">2 comments</p>
-  </div>
-  <div class="d-flex align-items-start">
-    <div class="w-320 me-3">
-      <div class="card">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item d-flex justify-content-between text-dark p-3">
+  <div class="row">
+    <div class="col-4">
+      <div class="dropdown">
+        <button class="border-0 bg-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <p class="h3">
+            All (4)
+            <span class="material-icons text-success align-middle ps-2">expand_more</span>
+          </p>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">HTML/CSS</a></li>
+          <li><a class="dropdown-item" href="#">JavaScrip</a></li>
+          <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+        </ul>
+      </div>
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
           <div>
             <h4 class="h5 mb-1">Chapter Assignment 2</h4>
             <h2 class="h3">Please check this file…</h2>
@@ -39,8 +53,8 @@ current: index
             <p class="h5 mb-1">4 hrs ago</p>
             <p class="h5 text-secondary">Emily Wang</p>
           </div>
-          </li>
-          <li class="list-group-item d-flex justify-content-between text-dark p-3">
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
           <div>
             <h4 class="h5 mb-1">Chapter Assignment 1</h4>
             <h2 class="h3">My Homework</h2>
@@ -49,8 +63,8 @@ current: index
             <p class="h5 mb-1">12 hrs ago</p>
             <p class="h5 text-secondary">David Xu</p>
           </div>
-          </li>
-          <li class="list-group-item d-flex justify-content-between text-dark p-3">
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
           <div>
             <h4 class="h5 mb-1">Final Assignment</h4>
             <h2 class="h3">Have a problem with this…</h2>
@@ -59,8 +73,8 @@ current: index
             <p class="h5 mb-1">18 hrs ago</p>
             <p class="h5 text-secondary">Tony Wei</p>
           </div>
-          </li>
-          <li class="list-group-item d-flex justify-content-between text-dark p-3">
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
           <div>
             <h4 class="h5 mb-1">Final Assignment</h4>
             <h2 class="h3">Did I do it right?</h2>
@@ -69,12 +83,12 @@ current: index
             <p class="h5 mb-1">19 hrs ago</p>
             <p class="h5 text-secondary">Christina Lin</p>
           </div>
-          </li>
-        </ul>
+        </a>
       </div>
     </div>
-    <div class="w-584">
-      <div class="card text-dark mb-3">
+    <div class="col-8">
+      <p class="h5 text-secondary text-end mb-1">2 comments</p>
+      <div class="card border-bottom-0 text-dark">
         <div class="card-header">
           <div>
             <h4 class="h5 mb-1">Chapter Assignment 2</h4>
@@ -82,32 +96,35 @@ current: index
           </div>
           <span class="material-icons">more_vert</span>
         </div>
-        <div class="card-body">
-          <div class="mb-3">
-            <ul class="list-unstyled d-flex align-items-start mb-0">
-              <li>
-                <img src="assets/images/emilywang.jpeg" alt="photo" class="proPic me-2">
+        <div class="card-body pt-3 pb-3 ps-3 pe-8">
+          <ul class="list-unstyled d-flex align-items-start mb-0">
+            <li class="w-40 me-2">
+              <img src="assets/images/emilywang.jpeg" alt="photo" class="proPic">
+            </li>
+            <li class="w-507">
+              <h6 class="h3 mb-3">
+                Emily Wang<br>
+                <span class="h5 text-secondary">10:38 AM (4 hours ago)</span>
+              </h6>
+              <p class="h4 mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="text-success bg-success px-1 bg-opacity-10">div</span> is bigger than the height of the <span class="text-success bg-success px-1 bg-opacity-10">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br>What is the gap or extra space below image?</p>
+              <button type="button" class="btn btn-light btn-md rounded-1 fw-bold text-dark mb-3">
+                <span class="material-icons align-middle pe-2">attach_file</span>
+                HW-2-David.zip
+              </button>
+              <div class="border-bottom border-gray400"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--  區塊一  -->
+      <div class="collapse show multi-collapse">
+        <div class="card border-top-0 text-dark mb-3">
+          <div class="card-body ps-3 pe-8">
+            <ul class="list-unstyled d-flex align-items-start" id="collapseExample">
+              <li class="w-40 me-2">
+                <img src="assets/images/andychen.jpeg" alt="photo" class="proPic">
               </li>
-              <li class="w-486">
-                <h6 class="h3 mb-3">
-                  Emily Wang<br>
-                  <span class="h5 text-secondary">10:38 AM (4 hours ago)</span>
-                </h6>
-                <p class="h4 mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="text-success bg-success px-1 bg-opacity-10">div</span> is bigger than the height of the <span class="text-success bg-success px-1 bg-opacity-10">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br>What is the gap or extra space below image?</p>
-                <button type="button" class="btn btn-light btn-md rounded-1 fw-bold text-dark mb-3">
-                  <span class="material-icons align-middle pe-2">attach_file</span>
-                  HW-2-David.zip
-                </button>
-                <div class="border-bottom border-gray400"></div>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul class="list-unstyled d-flex align-items-start mb-0">
-              <li>
-                <img src="assets/images/andychen.jpeg" alt="photo" class="proPic me-2">
-              </li>
-              <li class="w-486">
+              <li class="w-507">
                 <div class="d-flex justify-content-between align-items-start">
                   <h6 class="h3 mb-3">
                     Andy Chen (You)<br>
@@ -118,20 +135,43 @@ current: index
                     <span class="material-icons">edit</span>
                   </div>
                 </div>
-                <p class="h4 mb-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br>You can:<br><br>　• adjust the <span class="text-success bg-success px-1 bg-opacity-10">vertical-align</span> of the image to position it elsewhere (e.g. the middle ) or <br>　• change the <span class="text-success bg-success px-1 bg-opacity-10">display</span> so it isn’t inline.</p>
+                <p class="h4">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br>You can:<br><br>　• adjust the <span class="text-success bg-success px-1 bg-opacity-10">vertical-align</span> of the image to position it elsewhere (e.g. the middle ) or <br>　• change the <span class="text-success bg-success px-1 bg-opacity-10">display</span> so it isn’t inline.</p>
               </li>
             </ul>
           </div>
         </div>
-      </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="d-flex">
-          <span class="material-icons me-6">chevron_left</span>
-          <span class="material-icons">chevron_right</span>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex">
+            <span class="material-icons me-6">chevron_left</span>
+            <span class="material-icons">chevron_right</span>
+          </div>
+          <div class="d-flex">
+            <a href="#" class="btn btn-outline-success btn-xl rounded-1 fw-bold me-3">Mark as read</a>
+            <button class="btn btn-success btn-xl rounded-1 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="collapseExample">
+              Reply
+            </button>
+          </div>
         </div>
-        <div class="d-flex">
-          <a href="#" class="btn btn-outline-success btn-xl rounded-1 fw-bold me-3">Mark as read</a>
-          <a href="assignment.html" class="btn btn-success btn-xl rounded-1 fw-bold">Reply</a>
+      </div>
+      <!--  區塊二  -->
+      <div class="collapse multi-collapse card text-dark" id="collapseExample2">
+        <div class="card-header justify-content-start ps-6 py-3">
+          <h2 class="h3 me-2">Body Text</h2>
+          <span class="material-icons me-6">arrow_drop_down</span>
+          <span class="material-icons me-6">format_bold</span>
+          <span class="material-icons me-6">format_italic</span>
+          <span class="material-icons me-6">format_list_bulleted</span>
+          <span class="material-icons me-6">format_list_numbered</span>
+          <span class="material-icons me-6">image</span>
+          <span class="material-icons me-6">link</span>
+          <span class="material-icons">code</span>
+        </div>
+        <div class="card-body d-flex flex-column justify-content-between h-300 px-6 py-3">
+          <p class="h3 fw-normal text-gray400">Reply an answer…</p>
+          <div class="d-flex justify-content-end">
+            <button class="btn btn-outline-success btn-xl rounded-1 fw-bold me-2" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="collapseExample">Cancel</button>
+            <button class="btn btn-success btn-xl rounded-1 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="collapseExample">Reply</button>
+          </div>
         </div>
       </div>
     </div>

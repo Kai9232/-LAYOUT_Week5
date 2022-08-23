@@ -33,10 +33,10 @@ current: index
                   <div class="border-bottom border-gray400 pt-6 mb-6"></div>
                   <h5 class="h2 mb-3">Verification</h5>
                   <p class="h3 mb-3"><span class="material-icons text-danger align-middle pe-2">warning</span>Unverified</p>
-                  <button type="button" class="btn btn-outline-gray400 btn-2xl rounded-1 w-100p text-success fw-bold m-0">Send Verification Mail</button>
+                  <button type="button" class="btn btn-outline-gray400 btn-2xl rounded-1 w-100 text-success fw-bold m-0">Send Verification Mail</button>
                   <div class="border-bottom border-gray400 pt-6 mb-6"></div>
-                  <h5 class="h2 mb-3">Access Level</h5>
-                  <select class="form-select" aria-label="Default select example">
+                  <h5 class="h2 mb-3"><label for="add-level">Access Level</label></h5>
+                  <select class="form-select" aria-label="Default select example" id="add-level">
                     <option selected>-Choose access level-</option>
                     <option value="1">Level1</option>
                     <option value="2">Level2</option>
@@ -46,32 +46,32 @@ current: index
                   <h5 class="h2 mb-3">Custom Access</h5>
                   <div class="mb-5">
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="Check1">
-                      <label class="form-check-label ps-2" for="Check1">
+                      <input class="form-check-input" type="checkbox" value="" id="add-Check1">
+                      <label class="form-check-label ps-2" for="add-Check1">
                         Lecture
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="Check2">
-                      <label class="form-check-label ps-2" for="Check2">
+                      <input class="form-check-input" type="checkbox" value="" id="add-Check2">
+                      <label class="form-check-label ps-2" for="add-Check2">
                         Coupon
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="Check3">
-                      <label class="form-check-label ps-2" for="Check3">
+                      <input class="form-check-input" type="checkbox" value="" id="add-Check3">
+                      <label class="form-check-label ps-2" for="add-Check3">
                         Message
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="Check4">
-                      <label class="form-check-label ps-2" for="Check4">
+                      <input class="form-check-input" type="checkbox" value="" id="add-Check4">
+                      <label class="form-check-label ps-2" for="add-Check4">
                         Setting
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="Check5">
-                      <label class="form-check-label ps-2" for="Check5">
+                      <input class="form-check-input" type="checkbox" value="" id="add-Check5">
+                      <label class="form-check-label ps-2" for="add-Check5">
                         Task Menu
                       </label>
                     </div>
@@ -94,7 +94,7 @@ current: index
     </div>
   </div>
   <div class="content d-flex flex-column justify-content-between">
-    <table class="table table-hover w-920 mb-28 text-dark">
+    <table class="table table-hover w-920 text-dark mb-0">
       <thead>
         <tr>
           <th scope="col">ID<span class="material-icons text-success align-middle fsz-18 ps-2">arrow_downward</span></th>
@@ -159,10 +159,10 @@ current: index
                       <p class="h3"><span class="material-icons text-success align-middle pe-2">check_circle</span>Verified</p>
                       <time datetime="2020-04-12" class="h4">2020/4/12</time>
                     </div>
-                    <button type="button" class="btn btn-outline-gray400 btn-2xl rounded-1 w-100p text-gray400 fw-bold m-0" disabled>Send Verification Mail</button>
+                    <button type="button" class="btn btn-outline-gray400 btn-2xl rounded-1 w-100 text-gray400 fw-bold m-0" disabled>Send Verification Mail</button>
                     <div class="border-bottom border-gray400 pt-6 mb-6"></div>
-                    <h5 class="h2 mb-3">Access Level</h5>
-                    <select class="form-select" aria-label="Default select example">
+                    <h5 class="h2 mb-3"><label for="edit-level">Access Level</label></h5>
+                    <select class="form-select" aria-label="Default select example" id="edit-level">
                       <option selected>-Choose access level-</option>
                       <option value="1">Level1</option>
                       <option value="2">Level2</option>
@@ -172,32 +172,32 @@ current: index
                     <h5 class="h2 mb-3">Custom Access</h5>
                     <div class="mb-5">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="Check1">
-                        <label class="form-check-label ps-2" for="Check1">
+                        <input class="form-check-input" type="checkbox" value="" id="edit-Check1">
+                        <label class="form-check-label ps-2" for="edit-Check1">
                           Lecture
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="Check2">
-                        <label class="form-check-label ps-2" for="Check2">
+                        <input class="form-check-input" type="checkbox" value="" id="edit-Check2">
+                        <label class="form-check-label ps-2" for="edit-Check2">
                           Coupon
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="Check3" checked>
-                        <label class="form-check-label ps-2" for="Check3">
+                        <input class="form-check-input" type="checkbox" value="" id="edit-Check3" checked>
+                        <label class="form-check-label ps-2" for="edit-Check3">
                           Message
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="Check4">
-                        <label class="form-check-label ps-2" for="Check4">
+                        <input class="form-check-input" type="checkbox" value="" id="edit-Check4">
+                        <label class="form-check-label ps-2" for="edit-Check4">
                           Setting
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="Check5">
-                        <label class="form-check-label ps-2" for="Check5">
+                        <input class="form-check-input" type="checkbox" value="" id="edit-Check5">
+                        <label class="form-check-label ps-2" for="edit-Check5">
                           Task Menu
                         </label>
                       </div>
@@ -205,7 +205,7 @@ current: index
                     <div class="border-bottom border-gray400 pt-6 mb-6"></div>
                     <h5 class="h2 mb-3">Deactivate Account</h5>
                     <p class="h3 text-danger mb-3"><span class="material-icons align-middle pe-2">warning</span>This cannot be undone!</p>
-                    <button type="button" class="btn btn-outline-danger btn-2xl rounded-1 w-100p fw-bold m-0 mb-5">Deactivate This Account</button>
+                    <button type="button" class="btn btn-outline-danger btn-2xl rounded-1 w-100 fw-bold m-0 mb-5">Deactivate This Account</button>
                     <div class="modal-footer border-0 p-0">
                       <button type="button" class="btn btn-outline-success btn-xl rounded-1 fw-bold m-0 me-3" data-bs-dismiss="modal">Cancel</button>
                       <input type="submit" value="Update" class="btn btn-success btn-xl rounded-1 fw-bold m-0">
@@ -311,16 +311,16 @@ current: index
     </table>
     <nav aria-label="Page navigation example">
       <ul class="pagination mb-0 justify-content-end">
-        <li class="page-item">
-          <a class="page-link fw-bold text-success" href="#" aria-label="Previous">
+        <li class="page-item disabled">
+          <a class="page-link fw-bold link-success" href="#" aria-label="Previous">
             <span aria-hidden="true">&laquo;</span>
           </a>
         </li>
-        <li class="page-item"><a class="page-link fw-bold text-dark" href="#">1</a></li>
-        <li class="page-item"><a class="page-link fw-bold text-dark" href="#">2</a></li>
-        <li class="page-item"><a class="page-link fw-bold text-dark" href="#">3</a></li>
+        <li class="page-item"><a class="page-link fw-bold link-dark active" href="#">1</a></li>
+        <li class="page-item"><a class="page-link fw-bold link-dark" href="#">2</a></li>
+        <li class="page-item"><a class="page-link fw-bold link-dark" href="#">3</a></li>
         <li class="page-item">
-          <a class="page-link fw-bold text-success" href="#" aria-label="Next">
+          <a class="page-link fw-bold link-success" href="#" aria-label="Next">
             <span aria-hidden="true">&raquo;</span>
           </a>
         </li>

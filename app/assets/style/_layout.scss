@@ -10,6 +10,10 @@
 }
 .nav-item {
     padding-left: 32px;
+    border-left: 4px solid $light;
+    &:hover {
+        border-left: 4px solid $success;
+    }
 }
 .nav-link:hover {
     color: $success;

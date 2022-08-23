@@ -1,6 +1,6 @@
-// .content {
-//     height: calc(100vh-109px);
-// }
+.content {
+    height: 90%;
+}
 .idPhoto {
     width: 161px;
     height: 161px;
@@ -8,4 +8,13 @@
 }
 .page-link {
     border: 1px solid $success;
+    &:hover {
+        background-color: $success;
+        color: white;
+        border: 1px solid $success;
+    }
+    &.active {
+        background-color: $success;
+        color: white;
+    }
 }
